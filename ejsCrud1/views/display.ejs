@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+
+
+    <hr size="2" color="red"/>
+
+    <h1>Display Employee table</h1>
+
+     <table>
+        <tr>
+            <th>Empno</th>
+            <th>Name</th>
+            <th>City</th>
+            <th>Salary</th>
+        </tr>
+    <%
+        Mydata.forEach((key)=>{
+            %>
+
+            <tr>
+                <td><%= key.empno %></td>
+                <td><%= key.name %></td>
+                <td><%= key.city %></td>
+                <td><%= key.salary %></td>
+            </tr>
+
+            <%
+
+        })
+
+    %>
+    </table> 
+   
+
+
+
+    <hr size="2" color="red"/>
+
+      
+
+     
+
+       
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="pink">
+
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+
+
+    <hr size="2" color="red"/>
+
+    <h1>Welcome To The display Page</h1>
+
+
+    <% 
+    MyData.forEach((key)=>{
+        %>
+
+        <tr>
+
+            <td><%= key.empno %></td>
+             <td><%= key.name %></td>
+            <td><%= key.city %></td>
+            <td><%= key.salary %></td>
+
+        </tr>
+    })
+
+
+
+
+    <hr size="2" color="red"/>
+
+      
+
+     
+
+       
+</body>
+</html>
+
+
+ -->
