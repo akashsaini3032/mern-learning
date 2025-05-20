@@ -1,0 +1,67 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Students</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+     <a href="/update">Update</a>
+    <a href="/delete">Delete</a>
+
+    
+      <h1>Student Records Update page</h1>
+
+      <% if (students.length === 0) { %>
+      <p>No student records found.</p>
+      <% } else { %>
+      <table border="1" cellpadding="10" cellspacing="0">
+        <thead>
+          <tr>
+            <th>EmpId</th>
+            <th>EmpName</th>
+            <th>EmpPosition</th>
+            <th>EmpSalary</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% students.forEach(student => { %>
+          <tr>
+           <td>
+                    <%= key.empId %>
+                </td>
+                <td>
+                    <%= key.empName %>
+                </td>
+                <td>
+                    <%= key.empPosition %>
+                </td>
+                <td>
+                    <%= key.empSalary %>
+                </td>
+            <td>
+              <a href="/update?id=<%= student._id %>">Update</a> |
+              
+            </td>
+            <td><a id="delete" href="/delete?id=<%= student._id %>">Delete</a></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <% } %>
+   
+  </body>
+</html>

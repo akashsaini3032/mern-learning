@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+     <a href="/update">Update</a>
+    <a href="/delete">Delete</a>
+
+    <hr />
+
+    <h1>This is EDit  Page</h1>
+          
+
+    <form   action="/editsave" method="post"><br/><br/>
+
+        <input type="hidden" name="id"   value="<%= Data._id %>">
+        
+        Enter Emp Id : <input type="text"  value="<%= Data.idd %>"    name="idd"><br/><br/>
+        Enter Name  : <input type="text"  value="<%= Data.name %>"   name="name"><br/><br/>
+        Enter Position  : <input type="text"  value="<%= Data.position %>"   name="position"><br/><br/>
+        Enter Salary  : <input type="text" alue="<%= Data.salary %>" name="salary"><br/><br/>
+
+        <button type="submit">Save</button>
+        
+
+       
+    </form>
+    
+    
+    <hr />
+    <footer>
+        <p>This is footer Section!</p>
+    </footer>
+</body>
+</html>
