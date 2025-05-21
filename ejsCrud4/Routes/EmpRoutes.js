@@ -12,5 +12,9 @@ route.get("/update",EmpController.Update);
 route.get("/delete",EmpController.Delete);
 route.get("/edit",EmpController.EditData);
 route.post("/editsave",EmpController.EditSave);
+route.get("/search",EmpController.searchPage);
+route.post("/datasearch",EmpController.SearchData);
+route.get("/contact",EmpController.contactPage);
+
 
 module.exports=route;

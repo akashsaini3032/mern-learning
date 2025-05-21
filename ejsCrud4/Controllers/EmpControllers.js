@@ -69,6 +69,26 @@ const EditSave = async (req, res) => {
 }
 
 
+const searchPage=async(req,res)=>{
+    res.render("search");
+
+}
+
+const searchData=async(req,res)=>{
+    const {id}=req.body;
+    const Data= await EmpModels.find({empno:id})
+    console.log(Data);
+    res.send("OKK");
+}
+
+
+const contactPage=async(req,res)=>{
+    res.render("contact");
+    
+
+}
+
+
 module.exports = {
     Home,
     Insert,
@@ -77,5 +97,8 @@ module.exports = {
     Update,
     Delete,
     EditData,
-    EditSave
+    EditSave,
+    searchPage,
+    searchData,
+    contactPage
 }
