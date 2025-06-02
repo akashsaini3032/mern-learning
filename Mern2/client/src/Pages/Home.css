@@ -1,0 +1,82 @@
+
+body {
+   background-color: #e0f7fa;
+
+
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Home.css */
+#userform {
+  max-width: 420px;
+  margin: 100px auto;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#userform h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #00ffff;
+  font-weight: 600;
+}
+
+#userform .form-label {
+  color: #f1f1f1;
+  font-weight: 500;
+}
+
+#userform .form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: none;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.1);
+  background-color: #f1f1f1;
+  color: #000;
+  transition: 0.3s;
+}
+
+#userform .form-control:focus {
+  outline: none;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+#userform .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: #00ffff;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s;
+}
+
+#userform .btn:hover {
+  background-color: #00ced1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 255, 255, 0.3);
+}
+
+#userform a {
+  color: #00ffff;
+  text-decoration: underline;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+#userform a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
