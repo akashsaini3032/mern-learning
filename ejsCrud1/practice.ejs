@@ -1,0 +1,37 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Empno</th>
+             <th>Name</th>
+              <th>City</th>
+               <th>Salary</th>
+        </tr>
+
+        <%
+        MyData.forEach((key)=>{
+            %>
+
+            <tr>
+                <td><%=key.empno%></td>
+                 <td><%=key.name%></td>
+                  <td><%=key.city%></td>
+                   <td><%=key.salary%></td>
+            </tr>
+
+            <%
+        })
+
+        %>
+    </table>
+</body>
+</html>
