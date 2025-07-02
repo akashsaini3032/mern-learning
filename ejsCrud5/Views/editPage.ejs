@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <a href="/">Home</a>
+    <a href="/insert">Insert</a>
+    <a href="/display">Display</a>
+    <a href="/update">Update</a>
+    <hr size="2" color="red"/>
+    <h1>Welcome to EDIT Page</h1>
+    <form method="post" action="/editSave">
+        <input type="hidden" name="id" value="<%= Data._id %>"
+     Empno:<input type="text" name="eno" value="<%= Data.empno %>"/><br />
+     Name : <input type="text" name="nm" value="<%= Data.name %>"/><br />
+     City : <input type="text" name="cty" value="<%= Data.city %>"/><br />
+    Salary: <input type="text" name="sal" value="<%= Data.salary %>"/><br />
+    <button>Edit DATA</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/datasearch" method="POST">
+  <input type="text" name="eno" placeholder="Enter Emp No" />
+  <button type="submit">Search</button>
+</form>
+
+<table border="1">
+  <tr>
+    <th>Empno</th>
+    <th>Name</th>
+    <th>City</th>
+    <th>Salary</th>
+  </tr>
+  <% Data.forEach(key => { %>
+  <tr>
+    <td><%= key.empno %></td>
+    <td><%= key.name %></td>
+    <td><%= key.city %></td>
+    <td><%= key.salary %></td>
+  </tr>
+  <% }) %>
+</table>
+
+
+
+</body>
+</html>
