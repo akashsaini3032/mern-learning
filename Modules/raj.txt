@@ -1,0 +1,28 @@
+tywgeiujfrgiorthigegerngnegnn e behjgnhitiheibfergrtngnrgrtjhiotojkto
+
+Recap:
+Function Design: factorial function recursive hai, jismein pehle base case check hota hai aur phir recursive call hoti hai.
+
+Input & Output: Hum user se input lete hain, uska factorial calculate karte hain, aur result print karte hain.
+
+Code Flow: Program pehle input leta hai, phir factorial function ko call karke result calculate karta hai aur output show karta hai.
+
+Yeh pura code flow simple aur understandable hai, jismein recursion ka use kiya gaya hai factorial calculate karne ke liye.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
